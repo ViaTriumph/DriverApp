@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a"
+    android:fitsSystemWindows="true"
+    tools:context=".RideFareActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingBottom="50dp"
+        app:titleTextColor="@android:color/white"></android.support.v7.widget.Toolbar>
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="62dp"
+        android:background="#4b96ec"
+        android:text="Send"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="16sp" />
+
+
+    <EditText
+        android:id="@+id/fareText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="134dp"
+        android:ems="10"
+        android:hint="Fare..."
+        android:inputType="number"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/fareAmtText"
+        android:layout_width="162dp"
+        android:layout_height="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="206dp"
+        android:text="Fare Amount"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="53dp" />
+
+    <TextView
+        android:id="@+id/detailsText"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Passenger Details"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="53dp" />
+
+    <TextView
+        android:id="@+id/pNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pDest"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="147dp"
+        android:text="Name :"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/pDest"
+        android:layout_width="279dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="-175dp"
+        android:layout_toStartOf="@+id/sendButton"
+        android:text="Destination :"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/pTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pNameText"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="218dp"
+        android:text="Time :"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/pDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pNameText"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="260dp"
+        android:text="Date  :"
+        android:textSize="20sp" />
+
+</RelativeLayout>

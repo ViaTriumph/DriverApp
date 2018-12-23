@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DriverApp</string>
+    <string name="action_logout">Log Out</string>
+    <string name="not_registered">Not Registered yet? Register now!</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="firebase_path" translatable="false">MapCordinates</string>
+    <string name="preference_file_key">com.example.pruthvi.driverapp</string>
+</resources>
